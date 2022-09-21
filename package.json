@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-		"audit:prod": "yarn audit --groups dependencies",
+    "audit:prod": "yarn audit --groups dependencies",
     "build": "docusaurus build",
     "clear": "docusaurus clear",
     "deploy": "docusaurus deploy",
@@ -16,6 +16,7 @@
     "write-translations": "docusaurus write-translations"
   },
   "dependencies": {
+    "@cmfcmf/docusaurus-search-local": "^0.11.0",
     "@docusaurus/core": "2.1.0",
     "@docusaurus/preset-classic": "2.1.0",
     "@mdx-js/react": "^1.6.22",
