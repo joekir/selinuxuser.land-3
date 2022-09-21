@@ -68,6 +68,7 @@ const config = {
         logo: {
           alt: 'SELinux userland logo',
           src: 'img/logo.png',
+          srcDark: 'img/logo-dark.png'
         },
         items: [
           {
@@ -118,7 +119,6 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} selinuxuser.land, Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
@@ -126,8 +126,8 @@ const config = {
       },
       colorMode: {
         defaultMode: 'light',
-        disableSwitch: true,
-        respectPrefersColorScheme: false,
+        disableSwitch: false,
+        respectPrefersColorScheme: true,
       },
     }),
 };
