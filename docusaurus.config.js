@@ -7,13 +7,11 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Security Enhanced Linux education site',
-  tagline: "Don't disabled it, it's actually really powerful!",
+  tagline: "Don't disable it, it's actually really powerful!",
   url: 'https://selinuxuser.land',
   baseUrl: '/',
-
-  // Eventually I should make these throw instead of just warn!
-  onBrokenLinks: 'warn',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: 'throw',
   favicon: 'img/favicon.ico',
   trailingSlash: false,
 
@@ -54,7 +52,7 @@ const config = {
       require.resolve("@cmfcmf/docusaurus-search-local"),
       {
         indexDocs: true,
-        indexBlog: true,
+        indexBlog: false,
         language: 'en',
       },
     ],
@@ -66,7 +64,7 @@ const config = {
       navbar: {
         // title: 'selinuxuser.land',
         logo: {
-          alt: 'SELinux userland logo',
+          alt: 'SE Linux userland logo',
           src: 'img/logo.png',
           srcDark: 'img/logo-dark.png'
         },
@@ -89,34 +87,16 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Links',
-            items: [
-              {
-                label: 'Course',
-                to: '/',
-              },
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
-            ],
+            label: 'Found a bug or inaccuracy?',
+            href: 'https://github.com/joekir/selinuxuser.land/issues',
           },
           {
-            title: 'Community',
-            items: [
-              {
-                label: 'Buy Me a Coffee',
-                href: 'https://www.buymeacoffee.com/joekir',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/joekir/selinuxuser.land',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/josephkirwin',
-              },
-            ],
+            label: 'Twitter',
+            href: 'https://twitter.com/josephkirwin',
+          },
+          {
+            label: 'Buy Me a Coffee',
+            href: 'https://www.buymeacoffee.com/joekir',
           },
         ],
       },

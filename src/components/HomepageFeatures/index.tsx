@@ -1,41 +1,40 @@
 import React from 'react';
 import clsx from 'clsx';
 import styles from './styles.module.css';
+import Link from '@docusaurus/Link';
 
 type FeatureItem = {
   title: string;
-  Svg: React.ComponentType<React.ComponentProps<'svg'>>;
+  Svg?: React.ComponentType<React.ComponentProps<'svg'>>;
   description: JSX.Element;
 };
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Who is this course for?',
+    Svg: require('@site/static/img/absurd_glasses.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Software developers (and security engineers) that have either been tasked with defending a system
+        or just want to learn what to do with SE Linux other than disabling it! 
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'What can I expect when I complete it?',
+    Svg: require('@site/static/img/undraw_powerful.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        You'll be able to design, debug, package and test an SE Linux policy.  
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'What does it cost?',
+    Svg: require('@site/static/img/undraw_savings.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        It's free (other than your time), if you do use it I'm hoping you'll <a href="https://github.com/joekir/selinuxuser.land/issues">report bugs</a> or confusing parts so you can pay it forward though ;)
       </>
     ),
   },
@@ -63,6 +62,13 @@ export default function HomepageFeatures(): JSX.Element {
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
           ))}
+        </div>
+        <div className="text--center">
+          <Link
+            className="button button--secondary button--lg"
+            to="/intro">
+            Lets Get Started!
+          </Link>
         </div>
       </div>
     </section>
