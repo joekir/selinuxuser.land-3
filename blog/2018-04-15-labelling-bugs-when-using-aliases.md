@@ -1,5 +1,5 @@
 ---
-title: Bugs when with SELinux file system labelling when using aliases 
+title: Bugs when with SE Linux file system labelling when using aliases 
 slug: labelling-bugs-when-using-aliases 
 authors: [joek]
 tags: [labelling, bug]

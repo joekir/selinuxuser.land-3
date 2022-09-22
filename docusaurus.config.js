@@ -34,6 +34,7 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          sidebarCollapsed: true,
           sidebarPath: require.resolve('./sidebars.js'),
           routeBasePath: '/', // Serve the docs at the site's root
         },
@@ -70,8 +71,7 @@ const config = {
         },
         items: [
           {
-            type: 'doc',
-            docId: 'intro',
+            to: '/category/foundational-concepts-and-policy-building-blocks',
             position: 'left',
             label: 'Course',
           },

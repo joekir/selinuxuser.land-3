@@ -1,0 +1,8 @@
+{
+  "label": "Foundational concepts and policy building blocks",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "Discussion of foundational concepts of SELinux and what the core policy components."
+  }
+}

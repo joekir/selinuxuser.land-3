@@ -1,0 +1,8 @@
+{
+  "label": "Productionizing SE Linux deployments",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "description": "Review the finishing touches we recommend when packaging your policy for production."
+  }
+}
