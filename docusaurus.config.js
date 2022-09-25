@@ -10,8 +10,8 @@ const config = {
   tagline: "Don't disable it, it's actually really powerful!",
   url: 'https://selinuxuser.land',
   baseUrl: '/',
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'throw',
+  onBrokenLinks: 'warn',
+  onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   trailingSlash: false,
 
@@ -34,9 +34,10 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          breadcrumbs: true,
           sidebarCollapsed: true,
           sidebarPath: require.resolve('./sidebars.js'),
-          routeBasePath: '/', // Serve the docs at the site's root
+          routeBasePath: '/course/',
         },
         blog: {
           include: ['*.md'],
@@ -71,7 +72,7 @@ const config = {
         },
         items: [
           {
-            to: '/category/foundational-concepts-and-policy-building-blocks',
+            to: '/course/category/foundational-concepts-and-policy-building-blocks',
             position: 'left',
             label: 'Course',
           },

@@ -15,7 +15,7 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/absurd_glasses.svg').default,
     description: (
       <>
-        Software developers (and security engineers) that have either been tasked with defending a system
+        Software developers (and security engineers) that have been tasked with defending a system
         or just want to learn what to do with SE Linux other than disabling it! 
       </>
     ),
@@ -66,7 +66,7 @@ export default function HomepageFeatures(): JSX.Element {
         <div className='text--center'>
           <Link
             className='button button--secondary button--lg'
-            to='/category/foundational-concepts-and-policy-building-blocks'>
+            to='/course/category/foundational-concepts-and-policy-building-blocks'>
             Lets Get Started!
           </Link>
         </div>
