@@ -28,16 +28,13 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
       - name: Use Node.js 16.x
         uses: actions/setup-node@v3
         with:
           node-version: 16.x
-      - name: yarn build
-        uses: CultureHQ/actions-yarn@661c6f3a66041c2432bcfb78096b9207304614c8
-        with:
-          args: build
+      - name: Checkout
+        uses: actions/checkout@v3
+      - run: yarn install && yarn build
       - name: Setup Pages
         uses: actions/configure-pages@v2
       - name: Upload artifact
