@@ -37,7 +37,7 @@ const config = {
           breadcrumbs: true,
           sidebarCollapsed: true,
           sidebarPath: require.resolve('./sidebars.js'),
-          routeBasePath: '/course/',
+          routeBasePath: 'course/',
         },
         blog: {
           include: ['*.md'],

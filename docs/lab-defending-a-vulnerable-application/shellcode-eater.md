@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: Shellcode Eater
+title: Introducing 'Shellcode Eater'
 ---
 
 # Overview
