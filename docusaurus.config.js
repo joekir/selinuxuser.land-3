@@ -10,8 +10,9 @@ const config = {
   tagline: "Don't disable it, it's actually really powerful!",
   url: 'https://selinuxuser.land',
   baseUrl: '/',
-  onBrokenLinks: 'warn',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: 'throw',
+  onDuplicateRoutes: 'throw',
   favicon: 'img/favicon.ico',
   trailingSlash: false,
 
@@ -63,6 +64,17 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      announcementBar: {
+        id: 'beta',
+        content: "This is currently a beta release and I'm looking for constructive feedback, please <a target='_blank' href='https://github.com/joekir/selinuxuser.land/issues'>file any issues on Github.</a>",
+        backgroundColor: '#ffffff',
+        textColor: '#2e4885',
+        isCloseable: true,
+      },
+      image: 'img/logo.png',
+      metadata: [
+        {name: 'twitter:card', content: 'Education site for security enhanced Linux'}
+      ],
       navbar: {
         // title: 'selinuxuser.land',
         logo: {
@@ -88,16 +100,16 @@ const config = {
         style: 'dark',
         links: [
           {
-            label: 'Found a bug or inaccuracy?',
-            href: 'https://github.com/joekir/selinuxuser.land/issues',
+            label: 'Buy Me a Coffee',
+            href: 'https://www.buymeacoffee.com/joekir',
           },
           {
             label: 'Twitter',
             href: 'https://twitter.com/josephkirwin',
           },
           {
-            label: 'Buy Me a Coffee',
-            href: 'https://www.buymeacoffee.com/joekir',
+            label: 'Found a bug or inaccuracy?',
+            href: 'https://github.com/joekir/selinuxuser.land/issues',
           },
         ],
       },
