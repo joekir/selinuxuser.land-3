@@ -39,6 +39,9 @@ const config = {
           sidebarCollapsed: true,
           sidebarPath: require.resolve('./sidebars.js'),
           routeBasePath: 'course/',
+          remarkPlugins: [
+            require('mdx-mermaid'),
+          ]
         },
         blog: {
           include: ['*.md'],
@@ -72,9 +75,6 @@ const config = {
         isCloseable: true,
       },
       image: 'img/logo.png',
-      metadata: [
-        {name: 'twitter:card', content: 'Education site for security enhanced Linux'}
-      ],
       navbar: {
         // title: 'selinuxuser.land',
         logo: {
