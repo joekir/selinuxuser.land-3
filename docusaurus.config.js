@@ -108,6 +108,10 @@ const config = {
             href: 'https://twitter.com/josephkirwin',
           },
           {
+            label: 'Mastodon',
+            href: 'https://infosec.exchange/@joek',
+          },
+          {
             label: 'Found a bug or inaccuracy?',
             href: 'https://github.com/joekir/selinuxuser.land/issues',
           },

@@ -12,6 +12,7 @@ To understand its value, first we need to contextualize **where** an LSM[^1] act
 Below is a diagram [^2] of what happens when the System Call to [`open()`](https://man7.org/linux/man-pages/man2/open.2.html) happens:
 
 ```mermaid
+%%{init: {'theme': 'forest'}}%%
 flowchart LR
     A("syscall open()")-->B("inode search")
     B --> C("error check")
@@ -27,7 +28,7 @@ As we can extrapolate from the diagram, the LSM interface is very simplistic, a 
 LSMs are broken down into two types _major_ and _minor_, you may load multiple _minor_ LSMs but only 1 _major_, they're (_mostly_) non-stackable.
 SELinux (the subject of this course) is a _major_ LSM.
 
-# Popular LSM Implementations
+## Popular LSM Implementations
 
 ### Major
 
@@ -41,7 +42,7 @@ SELinux (the subject of this course) is a _major_ LSM.
 * [LoadPin](https://lwn.net/Articles/682302/) — Stackable LSM that the only code from read-only storage can be loaded into the Kernel. This was devised by Google and is leveraged by ChromeOS.
 * [Yama](https://www.kernel.org/doc/html/latest/admin-guide/LSM/Yama.html) — Primary focus is to constrain what users can _process trace_ ([ptrace](https://man7.org/linux/man-pages/man2/ptrace.2.html)) into another process' memory.
 
-# Why not use __"x"__ instead?
+## Why not use "LSM xyz" instead?
 
 * AppArmor: It's a one way membrane, it may restrict things from escaping, but it does not prevent things from getting into its sandboxes.
 * TOMOYO/AKARI: Likely the most comparable in capabilities to SELinux, a concern would be that there is no popular Linux distribution backing its usage.

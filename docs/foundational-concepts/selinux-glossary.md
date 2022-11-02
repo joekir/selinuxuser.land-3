@@ -4,6 +4,15 @@ title: SE Linux glossary
 description: The jargones!
 ---
 
+## Components
+
+* `object` — usually a file (but could also be a special file like a socket) within the Linux userland OS.
+* `class` — this is what _class_ of object it is, e.g. a file, a directory as each of these subset the available actions that a given object is able to take.
+* `type` — a label that is assigned to an `object` (SELinux policy only works with the labels assigned via the [extended attribute file system](https://man7.org/linux/man-pages/man7/xattr.7.html))
+* `domain` — a label assigned to a process that is interacting with `types`.
+* `permissions` — the subset of (all possible) actions that a given `class` is able to perform e.g. `read`, `append`, `open`.
+* `attributes` — tags that can be added to `types` to allow for easy grouping when applying constraints to many types at once.
+
 ## File extensions
 
 * `.pp` — "Policy Package", a compiled SELinux policy module.
@@ -20,6 +29,7 @@ description: The jargones!
 * `setenforce`/`getenforce` — modify the mode that SELinux is running in, this can be achieved by just editing files manually too.
 * `setsebool`/`getsebool` — Toggle various boolean settings if an SELinux policy exposes them.
 * `restorecon`/ #TODO
+* `seinfo` — Policy query tool
 
 ## SELinux policy development tools
 
