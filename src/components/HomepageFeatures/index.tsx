@@ -66,7 +66,7 @@ export default function HomepageFeatures(): JSX.Element {
         <div className='text--center'>
           <Link
             className='button button--secondary button--lg'
-            to='/course/category/foundational-concepts-and-policy-building-blocks'>
+            to='/course/overview'>
             Lets Get Started!
           </Link>
         </div>

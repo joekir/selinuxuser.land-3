@@ -41,7 +41,7 @@ const config = {
           routeBasePath: 'course/',
           remarkPlugins: [
             require('mdx-mermaid'),
-          ]
+          ],
         },
         blog: {
           include: ['*.md'],
@@ -84,7 +84,7 @@ const config = {
         },
         items: [
           {
-            to: '/course/category/foundational-concepts-and-policy-building-blocks',
+            to: '/course/overview',
             position: 'left',
             label: 'Course',
           },
