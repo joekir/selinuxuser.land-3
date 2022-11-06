@@ -104,12 +104,9 @@ const config = {
             href: 'https://www.buymeacoffee.com/joekir',
           },
           {
-            label: 'Twitter',
-            href: 'https://twitter.com/josephkirwin',
-          },
-          {
             label: 'Mastodon',
             href: 'https://infosec.exchange/@joek',
+            rel: 'me noopener noreferrer',
           },
           {
             label: 'Found a bug or inaccuracy?',
