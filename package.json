@@ -1,6 +1,6 @@
 {
   "name": "selinuxuser-land",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "audit:prod": "yarn audit --groups dependencies",
@@ -23,8 +23,8 @@
     "@mdx-js/react": "^1.6.22",
     "@tsconfig/docusaurus": "^1.0.5",
     "clsx": "^1.2.1",
-    "mdx-mermaid": "^1.3.2",
-    "mermaid": "^9.1.7",
+    "mdx-mermaid": "^1.3.0",
+    "mermaid": "9.1.1",
     "prism-react-renderer": "^1.3.5",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",

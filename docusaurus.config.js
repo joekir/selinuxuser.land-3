@@ -41,7 +41,7 @@ const config = {
           routeBasePath: 'course/',
           remarkPlugins: [
             require('mdx-mermaid'),
-          ],
+          ]
         },
         blog: {
           include: ['*.md'],
