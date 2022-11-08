@@ -1,7 +1,7 @@
 ---
 sidebar_position: 2
 title: MAC vs DAC
-description: Mandatory Access Control vs Discretionary Access Control
+description: Mandatory Access Control vs Discretionary Access Control.
 ---
 
 _A fundamental concept in most LSMs is that they usually use Mandatory Access Control.     

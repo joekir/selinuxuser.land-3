@@ -1,5 +1,5 @@
 {
-  "label": "[Lab 1] SE Linux secured SSH jump box",
+  "label": "[Lab 1] Using SELinux to secure a Bastion Host",
   "position": 3,
   "link": {
     "type": "generated-index"

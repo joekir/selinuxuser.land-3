@@ -1,6 +1,7 @@
 ---
 sidebar_position: 4
-title: First look at a complete SE Linux policy 
+title: First look at a complete SE Linux policy
+description: We review the example policy template that is available when you first install SELinux userland tooling.
 ---
 
 _This content can all be found after installing [policycoreutils-devel](https://rpmfind.net/linux/rpm2html/search.php?query=policycoreutils-devel) and looking in the directory `/usr/share/selinux/devel/` however <u>**I've also added my own comments inline to explain each piece for you.**</u>_

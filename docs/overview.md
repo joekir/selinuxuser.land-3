@@ -8,7 +8,7 @@ _The left-hand-side navigation of this course is in order and the course is inte
 #### [Foundational concepts](/course/category/foundational-concepts-and-policy-building-blocks)     
 The attempt of this introductory section is to expose you to all the parts of SELinux without overwhelming with intricacies that you would encounter if Googling "how to SELinux?".
 
-#### Lab: [Securing an SSH jumpbox with SELinux](/course/category/lab-1-se-linux-secured-ssh-jump-box)   
+#### Lab: [Using SELinux to secure a Bastion Host](/course/category/lab-1-using-selinux-to-secure-a-bastion-host)      
 Sometimes, before getting deep into documentation and theoretical it's better to learn by doing. That is exactly the intention of this section!
 A jumpbox (or bastion host[^1]) is a hardened point of entry into a larger, private network. Usually this is used by many users simultaneously, hence one should consider how to isolate user's from each other. As a bastion-host is already a well-covered subject matter the addition of SELinux is the only _new_ moving part here.
 

@@ -1,7 +1,7 @@
 ---
 sidebar_position: 3
 title: SE Linux glossary
-description: The jargones!
+description: Jargon Deluxe!
 ---
 
 ## Components

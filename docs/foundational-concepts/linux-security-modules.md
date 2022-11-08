@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
 title:  What is an LSM?
-description: LSM stands for Linux Security Module
+description: Learn what a Linux Security Module is.
 ---
 
 # Introduction
