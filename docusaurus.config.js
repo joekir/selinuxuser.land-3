@@ -102,15 +102,18 @@ const config = {
           {
             label: 'Buy Me a Coffee',
             href: 'https://www.buymeacoffee.com/joekir',
+            target: "_blank",
           },
           {
-            label: 'Mastodon',
+            label: 'Speak to me on Mastodon',
             href: 'https://infosec.exchange/@joek',
             rel: 'me noopener noreferrer',
+            target: "_blank",
           },
           {
             label: 'Found a bug or inaccuracy?',
             href: 'https://github.com/joekir/selinuxuser.land/issues',
+            target: "_blank",
           },
         ],
       },

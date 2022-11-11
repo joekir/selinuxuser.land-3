@@ -1,6 +1,7 @@
 ---
 sidebar_position: 4
 title: 3. What info can adjacent SSH tenants access?
+description: Learn how to steal credentials from another tenant's SSH agent.
 tags:
   - Lab 
 ---
