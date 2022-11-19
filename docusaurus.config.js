@@ -69,7 +69,7 @@ const config = {
     ({
       announcementBar: {
         id: 'beta',
-        content: "This is currently a beta release and I'm looking for constructive feedback, please <a target='_blank' href='https://github.com/joekir/selinuxuser.land/issues'>file any issues on Github.</a>",
+        content: "This is currently an alpha release and I'm looking for constructive feedback, please <a target='_blank' href='https://github.com/joekir/selinuxuser.land-3/issues'>file any issues on Github.</a>",
         backgroundColor: '#ffffff',
         textColor: '#2e4885',
         isCloseable: true,
@@ -90,7 +90,7 @@ const config = {
           },
           { to: '/blog', label: 'Blog', position: 'left' },
           {
-            href: 'https://github.com/joekir/selinuxuser.land',
+            href: 'https://github.com/joekir/selinuxuser.land-3',
             label: 'GitHub',
             position: 'right',
           },
@@ -100,19 +100,19 @@ const config = {
         style: 'dark',
         links: [
           {
-            label: 'Buy Me a Coffee',
+            label: 'Buy me a coffee?',
             href: 'https://www.buymeacoffee.com/joekir',
             target: "_blank",
           },
           {
-            label: 'Speak to me on Mastodon',
+            label: 'Chat about the course on Mastodon',
             href: 'https://infosec.exchange/@joek',
             rel: 'me noopener noreferrer',
             target: "_blank",
           },
           {
             label: 'Found a bug or inaccuracy?',
-            href: 'https://github.com/joekir/selinuxuser.land/issues',
+            href: 'https://github.com/joekir/selinuxuser.land-3/issues',
             target: "_blank",
           },
         ],
