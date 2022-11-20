@@ -2,6 +2,8 @@
 sidebar_position: 1
 title: What is a Bastion Host?
 description: We learn about the thing we're trying to protect in the lab. 
+tags:
+  - Lab 
 ---
 
 ## Context

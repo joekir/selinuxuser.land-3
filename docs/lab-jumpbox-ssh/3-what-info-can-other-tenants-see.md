@@ -52,6 +52,6 @@ This is how any observer on the Bastion could also do the same if they knew how 
 
 Yes, yes it does. For example, in 2019 matrix.org had a [security incident](https://matrix.org/blog/2019/05/08/post-mortem-and-remediations-for-apr-11-security-incident) caused directly from their usage of SSH Agent forwarding.
 
-There are of course some [other measures](https://medium.com/kernel-space/why-using-ssh-agent-forwarding-is-a-bad-idea-6cbdff31bbee) one could take to defend against this, but for the purpose of this lab lets ignore their existence and use SELinux to defend against the issue.
+The [modern way to address this](https://goteleport.com/blog/ssh-jump-server/) is to use a newer feature of SSH called ProxyJump, and disallow any TTY access whatsoever. But for the purpose of the exercise we will ignore that feature so we can learn more about SELinux.
 
 [^1]: I was intentionally using terms from the [STRIDE threat-modeling framework](https://en.wikipedia.org/wiki/STRIDE_(security)) here for internal consistency when describing threats.
