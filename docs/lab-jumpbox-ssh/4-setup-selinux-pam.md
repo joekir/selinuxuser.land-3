@@ -18,7 +18,7 @@ On AL2 SELinux is not enabled by default. So we need to do the following steps:
 2. Modify the file `/etc/selinux/config` from `SELINUX=disabled` to `SELINUX=permissive`, this will mean that our subjects under SELinux policy will not be enforced by it, we'll just see violations logged to auditd AVC (more about that in the next step).
 3. Reboot the host
 4. Once we reboot, run the following command to check everything looks like this:
-  ```
+  ```plain {7}
   $ sestatus
   SELinux status:                 enabled
   SELinuxfs mount:                /sys/fs/selinux
@@ -45,7 +45,7 @@ On AL2 SELinux is not enabled by default. So we need to do the following steps:
 ## Setting up SElinux to work with SSH (via PAM)
 
 In /etc/ssh/sshd_config `UsePAM` needs to be set to `yes`
-```
+```plain {4}
 ...
 WARNING: 'UsePAM no' is not supported in Red Hat Enterprise Linux and may cause several
 # problems.

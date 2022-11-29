@@ -16,7 +16,7 @@ const FeatureList: FeatureItem[] = [
     description: (
       <>
         Software developers (and security engineers) that have been tasked with defending a system
-        or just want to learn what to do with SE Linux other than disabling it! 
+        or just for people simply wanting to learn what to do with SELinux other than disabling it! 
       </>
     ),
   },
@@ -25,7 +25,7 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/undraw_powerful.svg').default,
     description: (
       <>
-        You'll be able to design, debug, package and test an SE Linux policy.  
+        You'll be able to design, debug, package and test an SELinux policy.  
       </>
     ),
   },
@@ -34,7 +34,7 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/undraw_savings.svg').default,
     description: (
       <>
-        It's free (other than your time), if you do use it I'm hoping you'll <a href="https://github.com/joekir/selinuxuser.land/issues">report bugs</a> or confusing parts so you can pay it forward though ;)
+        It's free (other than your time), though if you do use it I'm hoping you'll <a href="https://github.com/joekir/selinuxuser.land/issues">report bugs</a> or confusing parts so you can pay it forward ;)
       </>
     ),
   },

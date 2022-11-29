@@ -6,8 +6,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Security Enhanced Linux education site',
-  tagline: "Don't disable it, it's actually really powerful!",
+  title: 'Security-Enhanced Linux education site',
+  tagline: "Don't disable it, it's not as complex as you think!",
   url: 'https://selinuxuser.land',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -78,7 +78,7 @@ const config = {
       navbar: {
         // title: 'selinuxuser.land',
         logo: {
-          alt: 'SE Linux userland logo',
+          alt: 'SELinux userland logo',
           src: 'img/logo.png',
           srcDark: 'img/logo-dark.png'
         },

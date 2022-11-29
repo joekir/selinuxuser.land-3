@@ -23,13 +23,14 @@ description: Jargon Deluxe!
 ## The common utilities
 
 * `sestatus` — aggregates the state of the OS in relation to SELinux, it'll check through various files and settings to summarize.
-* `semanage` — "SELinux Policy Management tool"
+* `semanage` — "SELinux Policy Management tool".
 * `semodule` — primary command for adding and removing policy modules to SELinux.
     * Want to see what modules are installed in your system? `semodule -l`.
 * `setenforce`/`getenforce` — modify the mode that SELinux is running in, this can be achieved by just editing files manually too.
 * `setsebool`/`getsebool` — Toggle various boolean settings if an SELinux policy exposes them.
 * `restorecon`/ #TODO
-* `seinfo` — Policy query tool
+* `seinfo` — Policy query tool.
+* `secon` — See an SELinux context, from a file, program or user input.
 
 ## SELinux policy development tools
 
