@@ -12,7 +12,6 @@ To understand its value, first we need to contextualize **where** an LSM[^1] act
 Below is a diagram [^2] of what happens when the System Call to [`open()`](https://man7.org/linux/man-pages/man2/open.2.html) happens:
 
 ```mermaid
-%%{init: {'theme': 'forest'}}%%
 flowchart LR
     A("syscall open()")-->B("inode search")
     B --> C("error check")

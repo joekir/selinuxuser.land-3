@@ -16,7 +16,6 @@ tags:
 ## Diagram of what this looks like
 
 ```mermaid
-%%{init: {'theme': 'forest'}}%%
 flowchart LR
     subgraph "Bastion Host (Public Subnet)"
         bash

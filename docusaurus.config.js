@@ -15,6 +15,10 @@ const config = {
   onDuplicateRoutes: 'throw',
   favicon: 'img/favicon.ico',
   trailingSlash: false,
+  markdown: {
+    mermaid: true
+  },
+  themes: ['@docusaurus/theme-mermaid'],
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -39,9 +43,6 @@ const config = {
           sidebarCollapsed: true,
           sidebarPath: require.resolve('./sidebars.js'),
           routeBasePath: 'course/',
-          remarkPlugins: [
-            require('mdx-mermaid'),
-          ]
         },
         blog: {
           include: ['*.md'],
@@ -120,6 +121,9 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+      },
+      mermaid: {
+        theme: {light: 'forest', dark: 'dark'},
       },
       colorMode: {
         defaultMode: 'light',

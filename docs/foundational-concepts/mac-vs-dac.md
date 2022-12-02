@@ -12,7 +12,6 @@ I'm still searching for the perfect analogy, to simplify the distinction but I'l
 Imagine you're staying at a hotel, you get given a non-descript white, plastic key card. If you give this to a friend of yours they can also access the hotel room without any contest. This is DAC (Discretionary Access Control), i.e. it is at the discretion of the holder of the access, who else they can give it to.
 
 ```mermaid
-%%{init: {'theme': 'forest'}}%%
 graph LR
     A[You] -->|fa:fa-key Give Hotel Keycard| B(Friend)
     B --> |Unlock| C[Door]
@@ -26,7 +25,6 @@ Now the MAC (Mandatory Access Control) version of this is: Imagine that this sam
 
 ```mermaid
 graph LR
-%%{init: {'theme': 'forest'}}%%
     A[You] -->|fa:fa-id-card Give Passport| B(Friend)
     B --> |fa:fa-id-card Show Passport| C[Border Guard]
     C --x |Nope| B

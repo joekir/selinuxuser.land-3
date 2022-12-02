@@ -17,7 +17,6 @@ A _Jump Server_[^1] or _Bastion Host_[^2] in security networking terminology is 
 It is common for non-public infrastructure to be weakly-authenticated (e.g. username and passphrase), you would SSH (**S**ecure **SH**ell Protocol) connect into a Bastion Host and then connect from there onward to the less-hardened hosts.
 
 ```mermaid
-%%{init: {'theme': 'forest'}}%%
 flowchart LR
     UA("User A")-->|SSH| B("Bastion Host")
     UB("User B")-->|SSH| B("Bastion Host")
