@@ -1,6 +1,7 @@
 ---
 sidebar_position: 7
 title: 5. Where can I find the logs?
+description: Learn about auditd and ausearch and what type of events SELinux logs upon policy violations.
 tags:
   - Lab 
 ---

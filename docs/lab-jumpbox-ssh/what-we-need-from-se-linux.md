@@ -1,6 +1,7 @@
 ---
 sidebar_position: 5
 title: What do we need SELinux to do for us?
+description: An overview of the protections we're trying to add to fortify this bastion host.
 tags:
   - Lab 
 ---
