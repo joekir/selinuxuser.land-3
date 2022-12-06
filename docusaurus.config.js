@@ -66,6 +66,11 @@ const config = {
       src: "https://app.mailjet.com/statics/js/widget.modal.js",
       async: true,
       defer: true,
+    },
+    {
+      src: '/js/subscribe.js',
+      async: false,
+      defer: false
     }
   ],
 
